@@ -1,0 +1,21 @@
+server:
+  port: 8081
+logging:
+  level:
+    com:
+      example:
+        demoapi: debug
+    org:
+      springframework:
+        data: trace
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+spring:
+  main:
+    banner-mode: 'console'
